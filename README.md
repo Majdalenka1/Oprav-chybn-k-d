@@ -1,0 +1,1 @@
+# Oprav-chybn-k-d
