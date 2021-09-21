@@ -8,33 +8,34 @@ public class Main {
         ukol();
     }
 
-    public static void ukol1 () {
+    public static void ukol1() {
         System.out.println("Hello world!");
     }
-    public static void ukol2 () {
+
+    public static void ukol2() {
         String uzivatel = "Karel";
         System.out.println(uzivatel);
     }
 
-    public static void ukol3 () {
+    public static void ukol3() {
         int pocetLekci = 10;
         System.out.println(pocetLekci);
     }
 
-    public static void ukol4 () {
+    public static void ukol4() {
         double cena = 10.0;
         System.out.println(cena);
     }
 
-    public static void ukol5 () {
-        double cena = 0;
+    public static void ukol5() {
+        BigDecimal cena = BigDecimal.valueOf(0);
         for (int i = 0; i < 10; i++) {
-            cena += 0.1;
+            cena = cena.add(BigDecimal.valueOf(0.1));
         }
         System.out.println(cena);
         // Má vypsat "1.0". Ale vypíše "0.9999" !!!
     }
-
+    
     public static void ukol6 () {
 
         BigDecimal cena = new BigDecimal("0.1");
